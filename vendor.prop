@@ -134,9 +134,6 @@ ro.audio.resampler.psd.halflength=960
 ro.audio.resampler.psd.cutoff_percent=98
 ro.audio.resampler.psd.tbwcheat=0
 
-# Audio volume steps
-ro.config.vc_call_vol_steps=11
-
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
 bluetooth.hardware.power.idle_cur_ma=36
