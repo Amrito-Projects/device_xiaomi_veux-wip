@@ -163,9 +163,9 @@ BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
-
-# Security Patch Level
-VENDOR_SECURITY_PATCH := 2023-09-01
+# Security patch
+BOOT_SECURITY_PATCH := 2024-02-01
+VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # Sepolicy
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
