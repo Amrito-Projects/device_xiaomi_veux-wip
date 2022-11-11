@@ -589,5 +589,9 @@ PRODUCT_PACKAGES += \
     libvndksupport \
     libvndksupport.vendor
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
+
 # Inherit from vendor blobs
 include vendor/xiaomi/veux/veux-vendor.mk
