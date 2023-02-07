@@ -213,6 +213,7 @@ vendor.display.disable_metadata_dynamic_fps=1
 vendor.display.idle_time=0
 vendor.display.idle_time_inactive=0
 vendor.display.defer_fps_frame_count=2
+debug.sf.enable_transaction_tracing=false
 
 # DPM
 persist.vendor.dpm.feature=1
