@@ -13,6 +13,13 @@
         vendor_nfc_framework_compatibility_matrix_pn557.xml
 -->
 <compatibility-matrix version="2.0" type="framework">
+    <hal format="aidl" optional="true">
+        <name>vendor.lineage.health</name>
+        <interface>
+            <name>IChargingControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.automotive.evs</name>
         <version>1.1</version>
