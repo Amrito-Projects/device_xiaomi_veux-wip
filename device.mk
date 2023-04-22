@@ -47,7 +47,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@6.0-impl \
     audioadsprpcd \
-    audio.primary.holi \
     audio.r_submix.default \
     audio.usb.default \
     libaudiopreprocessing \
@@ -257,8 +256,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
     libstagefrighthw \
     libstagefright_omx \
     libstagefright_foundation \
