@@ -64,7 +64,8 @@ PRODUCT_PACKAGES += \
     libreverbwrapper \
     libsndmonitor \
     libspkrprot \
-    libvisualizer
+    libvisualizer \
+    android.hardware.soundtrigger@2.3-impl
 
 # Audio Configs
 PRODUCT_COPY_FILES += \
