@@ -151,6 +151,7 @@ echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
 echo 1113600 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
 echo 576000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+echo 1 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
 
 # configure governor settings for gold cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy6/scaling_governor
@@ -158,6 +159,7 @@ echo 0 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/down_rate_limit_us
 echo 0 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/up_rate_limit_us
 echo 1228800 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/hispeed_freq
 echo 691200 > /sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq
+echo 1 > /sys/devices/system/cpu/cpufreq/policy6/schedutil/pl
 
 # Colocation V3 settings
 echo 680000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq
