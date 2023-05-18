@@ -505,5 +505,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager \
+    libvndksupport \
+    libvndksupport.vendor
+
 # Inherit from vendor blobs
 include vendor/xiaomi/veux/veux-vendor.mk
