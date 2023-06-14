@@ -261,7 +261,8 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libstagefright_omx \
     libstagefright_foundation \
-    libstagefright_softomx.vendor
+    libstagefright_softomx.vendor \
+    libOmxVidcCommon
 
 # Mlipay
 PRODUCT_PACKAGES += \
