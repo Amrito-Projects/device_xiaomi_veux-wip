@@ -133,6 +133,7 @@ ro.audio.resampler.psd.stopband=132
 ro.audio.resampler.psd.halflength=960
 ro.audio.resampler.psd.cutoff_percent=98
 ro.audio.resampler.psd.tbwcheat=0
+ro.vendor.audio.voice.change.version=2
 
 # Bluetooth
 vendor.bluetooth.soc=hastings
@@ -356,6 +357,7 @@ ro.hw_timeout_multiplier=3
 
 # Wifi
 wifi.aware.interface=wifi-aware0
+ro.hardware.wlan.dbs=0
 
 # Zygote
 zygote.critical_window.minute=10
