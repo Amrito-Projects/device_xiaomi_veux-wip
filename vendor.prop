@@ -175,6 +175,7 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 persist.bluetooth.sbc_hd_higher_bitrate=1
 persist.vendor.qcom.bluetooth.scram.enabled=true
+persist.vendor.btstack.enable.lpa=true
 
 # Camera
 camera.disable_zsl_mode=true
