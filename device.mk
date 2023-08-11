@@ -467,6 +467,10 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlayCOMMON \
+    TelephonyOverlayCOMMON
+
+PRODUCT_PACKAGES += \
     FrameworkOverlayVEUX \
     SettingsOverlayVEUX \
     SystemUIOverlayVEUX \
