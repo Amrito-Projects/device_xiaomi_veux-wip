@@ -7,9 +7,6 @@
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
 
-# GSI Keys
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
-
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
@@ -107,8 +104,6 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0 \
-    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     libcamera2ndk_vendor \
@@ -446,6 +441,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.xiaomi-multihal \
+    android.frameworks.sensorservice@1.0 \
+    android.frameworks.sensorservice@1.0.vendor \
+    android.hardware.sensors@1.0-impl-xiaomi \
+    android.hardware.sensors@1.0-service \
+    android.hardware.sensors@2.1-service.xiaomi_holi-multihal \
     libsensorndkbridge
 
 # Shipping API Level
