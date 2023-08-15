@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_CALL_RECORDING_SUPPORTED := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Inherit from veux device
 $(call inherit-product, device/xiaomi/veux/device.mk)
