@@ -466,6 +466,15 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+PRODUCT_PACKAGES += \
+    FrameworkOverlayVEUX \
+    SettingsOverlayVEUX \
+    SystemUIOverlayVEUX \
+    WifiOverlayVEUX
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/overlay/config-vendor.xml:$(TARGET_COPY_OUT_VENDOR)/overlay/config/config.xml
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
