@@ -310,6 +310,7 @@ telephony.lteOnCdmaDevice=1
 ro.telephony.call_ring.multiple=false
 ro.vendor.ril.svdo=false
 ro.vendor.ril.svlte1x=false
+persist.vendor.radio.redir_party_num=0
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
