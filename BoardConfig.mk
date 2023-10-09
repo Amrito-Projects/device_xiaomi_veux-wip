@@ -52,7 +52,7 @@ TARGET_NO_BOOTLOADER := true
 # Camera
 MALLOC_SVELTE := true
 MALLOC_SVELTE_FOR_LIBC32 := true
-
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 
 # Display
 TARGET_HAS_HDR_DISPLAY := true
@@ -215,3 +215,4 @@ CONFIG_ACS := true
 
 # Inherit from the proprietary version
 include vendor/xiaomi/veux/BoardConfigVendor.mk
+
