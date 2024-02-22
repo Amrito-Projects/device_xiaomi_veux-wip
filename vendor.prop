@@ -319,6 +319,7 @@ ro.vendor.ril.svlte1x=false
 persist.vendor.radio.redir_party_num=0
 vendor.media.target_variant=_blair
 vendor.netflix.bsp_rev=Q4350-32962-1
+persist.cust.tel.eons=1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
