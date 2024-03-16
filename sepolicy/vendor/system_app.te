@@ -22,3 +22,7 @@ binder_call(system_app, wificond)
 
 # we don't have google battery support, add dummy domain and let it return null by selinux denial
 dontaudit system_app hal_dummy_googlebattery_service:service_manager find;
+
+# Battery Health
+allow system_app sysfs_battery_supply:dir { search };
+allow system_app sysfs_battery_supply:file { read open getattr };
