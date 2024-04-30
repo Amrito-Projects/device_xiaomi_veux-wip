@@ -324,6 +324,7 @@ persist.dbg.ims_volte_enable=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
+persist.vendor.radio.add_power_save=1
 
 # HWUI
 ro.hwui.render_ahead=2
