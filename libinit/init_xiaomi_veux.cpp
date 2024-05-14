@@ -143,6 +143,8 @@ void vendor_load_properties() {
     property_override("ro.boot.verifiedbootstate", "green");
     property_override("ro.oem_unlock_supported", "0");
 
-    // LMKD Tunning
+    // Release Keys
+    property_override("ro.build.keys", "release-keys");
+    property_override("ro.build.tags", "release-keys");
 
 }
