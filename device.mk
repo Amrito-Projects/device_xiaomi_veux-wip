@@ -116,7 +116,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt
 
 PRODUCT_PACKAGES += \
-    libpiex_shim
+    vendor.qti.hardware.camera.postproc@1.0.vendor \
+    libcamera2ndk_vendor \
+    libion.vendor \
+    libgui_vendor \
+    libpng.vendor
+
+PRODUCT_PACKAGES += \
+    libpiex_shim \
+    libutilscallstack.vendor
 
 # Consumer IR
 PRODUCT_PACKAGES += \
@@ -287,7 +295,8 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor
+    android.system.net.netd@1.1.vendor \
+    libnetutils.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -411,6 +420,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson \
     librmnetctl
+
+PRODUCT_PACKAGES += \
+    libcurl.vendor \
+    libjsoncpp.vendor \
+    libsqlite.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
