@@ -583,11 +583,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
 
 # Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.xiaomi
-
-PRODUCT_COPY_FILES += \
-    hardware/xiaomi/aidl/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
 # WiFi
 PRODUCT_PACKAGES += \
