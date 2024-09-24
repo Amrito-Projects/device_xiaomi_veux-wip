@@ -65,19 +65,19 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
 
 # HIDL
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/manifest/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest/manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/manifest/framework_compatibility_matrix.xml
 
 ODM_MANIFEST_SKUS += nfc
-ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifest_nfc.xml
+ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifest/manifest_nfc.xml
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
@@ -152,11 +152,11 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := holi
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/properties/system_ext.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
@@ -171,10 +171,12 @@ TARGET_USERIMAGES_USE_F2FS := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2023-09-01
 
 # Sepolicy
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
@@ -209,7 +211,6 @@ WIFI_DRIVER_STATE_ON := "ON"
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
-
 CONFIG_ACS := true
 
 # Inherit from the proprietary version
